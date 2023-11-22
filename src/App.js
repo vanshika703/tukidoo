@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Sidebar from "./components/Sidebar";
+import Navbar from "./components/Navbar";
+import SubSidebar from "./components/SubSidebar";
+import Videoplayer from "./components/Videoplayer";
+import { IconContext } from "react-icons";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <IconContext.Provider
+      value={{className: "global-class-name" }}
+    >
+      <div className="flex flex-row">
+        <Sidebar />
+        <div className="w-full">
+          <Navbar />
+          <div className="flex">
+            <SubSidebar />
+            <Videoplayer />
+          </div>
+        </div>
+      </div>
+    </IconContext.Provider>
   );
 }
 
