@@ -38,7 +38,7 @@ const navItems = [
 const Navbar = () => {
   return (
     <div className="bg-white">
-      <div className="w-full flex justify-between items-center p-6 font-medium shadow-md">
+      <div className="w-full flex justify-between items-center p-6 font-semibold shadow-md">
         <div className="flex justify-center items-center gap-5 text-2xl">
           <div className=" bg-[#e2dcef] p-1 rounded-full">
             <IoIosArrowBack className="p-1" />
@@ -61,10 +61,10 @@ const Navbar = () => {
           {navItems?.map((navItem) => (
             <li
               className={
-                "flex justify-center gap-2 items-center p-5 font-semibold cursor-pointer " +
+                "flex justify-center gap-2 items-center p-5 cursor-pointer " +
                 (navItem.name === "Videos"
                   ? " font-semibold text-[#7f64ba] border-b-[3px] border-b-[#7f64ba] "
-                  : " font-semibold text-slate-600 ")
+                  : " text-slate-600 ")
               }
             >
               {navItem.icon} {navItem.name}

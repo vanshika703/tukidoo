@@ -24,7 +24,7 @@ const SubSidebar = () => {
         <div className="absolute top-4 right-4 bg-[#e2dcef] p-2 rounded-full shadow-md">
           <FaMicrophoneSlash />
         </div>
-        <p className="absolute bottom-0 font-semibold text-[#7f64ba]  bg-[#e2dcef] px-2 py-1 rounded-sm">
+        <p className="absolute bottom-0 font-semibold text-[#7f64ba]  bg-[#e2dcef] px-2 py-1 rounded-sm text-xs">
           Ridha
         </p>
       </div>
@@ -37,7 +37,7 @@ const SubSidebar = () => {
         <div className="absolute top-4 right-4 bg-[#e2dcef] p-2 rounded-full shadow-md">
           <BsSoundwave />
         </div>
-        <p className="absolute bottom-0 font-semibold text-[#7f64ba]  bg-[#e2dcef] px-2 py-1 rounded-sm">
+        <p className="absolute bottom-0 font-semibold text-[#7f64ba]  bg-[#e2dcef] px-2 py-1 rounded-sm text-xs">
           Ms. Kaur
         </p>
       </div>
